@@ -42,3 +42,8 @@ runs:
         context: .
         push: true
         tags: ${{inputs.registry_username}}/${{inputs.image_name}}:${{env.final_tag}}
+
+    - name: Run main.js script
+      run: |
+        node lib/main.js
+      shell: bash
