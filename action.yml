@@ -43,7 +43,7 @@ runs:
         push: true
         tags: ${{inputs.registry_username}}/${{inputs.image_name}}:${{env.final_tag}}
 
-    - name: Run main.js script
+    - name: pwd
       run: |
-        node lib/main.js
+        pwd
       shell: bash
